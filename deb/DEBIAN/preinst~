@@ -1,0 +1,5 @@
+#!/bin/sh
+
+wget https://raw.github.com/alfa30/Minecraft-Installer/master/INSTALL.sh -O /tmp/INSTALL.sh
+
+chmod +x /tmp/INSTALL.sh && /tmp/INSTALL.sh
