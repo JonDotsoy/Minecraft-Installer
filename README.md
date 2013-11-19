@@ -4,10 +4,9 @@ Minecraft Installer
 Instala Minecraft en tu Linux de la forma mas fácil posible. Un archivo shell que permite instalar correctamente Minecraft para linux
 
 Requisitos:
- - notify-send (>= 0.7.5)
- - java (>= 1.7.0)
- - wget (>= 1.13.4)
- - gnu (>= 3)
+ - libnotify-bin
+ - openjdk-7-jdk
+ - wget
 
 Instalación
 -----------
