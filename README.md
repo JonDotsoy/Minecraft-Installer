@@ -12,7 +12,7 @@ Requisitos:
 Instalación
 -----------
 
-Descargar el archivo "INSTALL.sh".
+Descargar el archivo "[INSTALL.sh](https://raw.github.com/alfa30/Minecraft-Installer/master/INSTALL.sh)".
 
 Abrir terminal y escribir
 ```
