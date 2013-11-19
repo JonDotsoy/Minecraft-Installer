@@ -19,6 +19,11 @@ else
 		then
 			rm /tmp/Minecraft.jar
 		fi
+		if [ -f /tmp/minecraft.svg ]
+		then
+			rm /tmp/minecraft.svg
+		fi
+		##https://raw.github.com/alfa30/Minecraft-Installer/master/src/minecraft.svg
 		if [ -f /usr/share/icons/gnome/scalable/apps/minecraft.svg ]
 		then
 			rm /usr/share/icons/gnome/scalable/apps/minecraft.svg
@@ -28,9 +33,10 @@ else
 			rm /usr/src/Minecraft/ -R
 		fi
 		wget -O /tmp/Minecraft.jar https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+		wget -O /tmp/minecraft.svg https://raw.github.com/alfa30/Minecraft-Installer/master/src/minecraft.svg
 		mkdir /usr/src/Minecraft
 		mv /tmp/Minecraft.jar /usr/src/Minecraft/ -f
-		cp ./minecraft.svg /usr/share/icons/gnome/scalable/apps/minecraft.svg -f
+		cp /tmp/minecraft.svg /usr/share/icons/gnome/scalable/apps/minecraft.svg -f
 
 		#Create Launcher /usr/share/applications/Minecraft.desktop 
 		echo "[Desktop Entry]" > /usr/share/applications/Minecraft.desktop
