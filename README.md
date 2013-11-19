@@ -13,7 +13,9 @@ Instalación
 -----------
 
 1) Descargar el archivo "[INSTALL.sh](https://raw.github.com/alfa30/Minecraft-Installer/master/INSTALL.sh)".
-
+```
+wget https://raw.github.com/alfa30/Minecraft-Installer/master/INSTALL.sh
+```
 2) Abrir terminal y escribir
 ```
 chmod +x ./INSTALL.sh && ./INSTALL.sh
