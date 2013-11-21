@@ -1,8 +1,9 @@
 Package: Minecraft-Installer
-Version: 1.0
+Version: 1.0.1
 Architecture: all
 Maintainer: Jonathan Delgado Z <jonad.correo@gmail.com>
 Pre-Depends: libnotify-bin, openjdk-7-jdk, wget
+Installed-Size: 1024
 Depends:
 Priority: optional
 Description: Este paquete permite la rapida instalación de Minecraft para linux

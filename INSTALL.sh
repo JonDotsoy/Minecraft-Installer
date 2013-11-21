@@ -45,10 +45,18 @@ else
 		echo "GenericName=Minecraft Client" >> /usr/share/applications/Minecraft.desktop
 		echo "Comment=El juego de pixeles" >> /usr/share/applications/Minecraft.desktop
 		echo "Keywords=Game;jeugo;java;" >> /usr/share/applications/Minecraft.desktop
-		echo "Exec=java -jar /usr/src/Minecraft/Minecraft.jar" >> /usr/share/applications/Minecraft.desktop
+		echo "Exec=/usr/src/Minecraft/Minecraft.launcher.sh" >> /usr/share/applications/Minecraft.desktop
 		echo "Icon=/usr/share/icons/gnome/scalable/apps/minecraft.svg" >> /usr/share/applications/Minecraft.desktop
 		echo "Terminal=false" >> /usr/share/applications/Minecraft.desktop
 		echo "Type=Application" >> /usr/share/applications/Minecraft.desktop
+
+		# crea comando para el lanzador terminal
+		touch /usr/src/Minecraft/Minecraft.launcher.sh
+		echo "#!/bin/sh" > /usr/src/Minecraft/Minecraft.launcher.sh
+		echo "java -jar /usr/src/Minecraft/Minecraft.jar" >> /usr/src/Minecraft/Minecraft.launcher.sh
+		chmod +x /usr/src/Minecraft/Minecraft.launcher.sh
+		ln -s /usr/src/Minecraft/Minecraft.launcher.sh /usr/bin/minecraft
+
 		#Cambiar permisos
 		chmod 644 /usr/share/applications/Minecraft.desktop
 		if [ $2 = "Terminal" ]
