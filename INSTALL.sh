@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 examtermi=$(tty | grep ^/dev/pts/)
 
 if [ -z $1 ]; then
@@ -22,6 +21,11 @@ else
 		if [ -f /tmp/minecraft.svg ]
 		then
 			rm /tmp/minecraft.svg
+		fi
+		#rm /usr/bin/minecraft 
+		if [ -f /usr/bin/minecraft ]
+		then
+			rm /usr/bin/minecraft
 		fi
 		##https://raw.github.com/alfa30/Minecraft-Installer/master/src/minecraft.svg
 		if [ -f /usr/share/icons/gnome/scalable/apps/minecraft.svg ]
