@@ -6,7 +6,7 @@ Instala Minecraft en tu Linux de la forma mas fácil posible. Un archivo shell q
 Requisitos:
  - libnotify-bin
  - openjdk-7-jdk
- - wget
+ - wget/curl
 
 Instalación
 -----------
