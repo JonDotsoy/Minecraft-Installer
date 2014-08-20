@@ -11,6 +11,14 @@ Requisitos:
 Instalación
 -----------
 
+### Usando cURL
+
+```sh
+curl https://raw.githubusercontent.com/alfa30/Minecraft-Installer/master/INSTALL.sh -sS | sh
+```
+
+### Manual
+
 1) Descargar el archivo "[INSTALL.sh](https://raw.github.com/alfa30/Minecraft-Installer/master/INSTALL.sh)".
 ```
 wget https://raw.github.com/alfa30/Minecraft-Installer/master/INSTALL.sh
